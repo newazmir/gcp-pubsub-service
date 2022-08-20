@@ -1,8 +1,8 @@
-## Jira Ticket
+## Any issue ticket number
 
 > A few sentences about the context of the PR.
 
-https://checkatrade.atlassian.net/browse/add-ticket-id-here
+https://example.com/add-ticket-id-here
 
 ## List of changes:
 
