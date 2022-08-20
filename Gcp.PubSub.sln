@@ -16,9 +16,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".config", ".config", "{36E4
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{CB4E08AD-9EA3-47E7-8288-4B53E6AB4FA4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{9F9EC71B-8B10-4132-A813-5CC4E9947934}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{4E1A8567-7626-41D7-AA55-12B6C952F49E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{7D921A7D-3BC9-45EF-85FE-FC5895D79957}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\BuildCheck.yml = .github\workflows\BuildCheck.yml
+		.github\workflows\publishAlphaPackage.yml = .github\workflows\publishAlphaPackage.yml
+		.github\workflows\publishPackage.yml = .github\workflows\publishPackage.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,8 +46,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E25A8A4A-98ED-4652-BE24-9EDC9B0BDD75} = {2F1E3A36-D6B4-4285-82A3-80F542897E91}
 		{C4C43865-5F01-44A0-AD42-968B7D5587C2} = {2F1E3A36-D6B4-4285-82A3-80F542897E91}
-		{CB4E08AD-9EA3-47E7-8288-4B53E6AB4FA4} = {36E42EC6-0A33-41BE-98A6-4E6D92EDB3D4}
-		{4E1A8567-7626-41D7-AA55-12B6C952F49E} = {CB4E08AD-9EA3-47E7-8288-4B53E6AB4FA4}
+		{9F9EC71B-8B10-4132-A813-5CC4E9947934} = {36E42EC6-0A33-41BE-98A6-4E6D92EDB3D4}
+		{7D921A7D-3BC9-45EF-85FE-FC5895D79957} = {9F9EC71B-8B10-4132-A813-5CC4E9947934}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {715754EF-7D19-4CCE-AAEA-8E70B2987449}
