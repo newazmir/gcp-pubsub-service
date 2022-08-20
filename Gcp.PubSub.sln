@@ -7,11 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gcp.PubSub", "Gcp.PubSub\Gc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2F1E3A36-D6B4-4285-82A3-80F542897E91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gcp.PubSub.Interfaces", "Gcp.PubSub.Interfaces\Gcp.PubSub.Interfaces.csproj", "{C4C43865-5F01-44A0-AD42-968B7D5587C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gcp.PubSub.Interfaces", "Gcp.PubSub.Interfaces\Gcp.PubSub.Interfaces.csproj", "{C4C43865-5F01-44A0-AD42-968B7D5587C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".config", ".config", "{36E42EC6-0A33-41BE-98A6-4E6D92EDB3D4}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		CHANGELOG.md = CHANGELOG.md
 		package.json = package.json
 		README.md = README.md
 	EndProjectSection
