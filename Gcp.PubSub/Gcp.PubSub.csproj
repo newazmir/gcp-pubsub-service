@@ -2,8 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+	<AssemblyName>Gcp.PubSub</AssemblyName>
+	<PackageId>Gcp.PubSub</PackageId>
+	<Authors>MSN</Authors>
+	<RepositoryUrl>https://github.com/newazmir/gcp-pubsub-service</RepositoryUrl>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<Version>$(PackageVersion)</Version>
   </PropertyGroup>
 
   <ItemGroup>
