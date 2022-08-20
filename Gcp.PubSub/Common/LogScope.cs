@@ -19,7 +19,7 @@ namespace Gcp.PubSub.Common
         private readonly ILogger _logger;
         private readonly string _description;
 
-        public LogScope(ILogger logger, IObjectSerializer serializer, object obj = null, string desc = null, LogLevel logLevel = LogLevel.Information)
+        public LogScope(ILogger logger, IObjectSerializer serializer, object? obj = null, string? desc = null, LogLevel logLevel = LogLevel.Information)
         {
             _logLevel = logLevel;
             _start = DateTime.Now;
@@ -69,9 +69,9 @@ namespace Gcp.PubSub.Common
             }
             _disposed = true;
         }
-	}
+    }
 }
 internal static class LogScopeExtensions
 {
-    public static LogScope CreateScope(this ILogger logger, object obj = null, string desc = null) => new(logger, new ObjectSerializer(), obj, desc);
+    public static LogScope CreateScope(this ILogger logger, object? obj = null, string? desc = null) => new(logger, new ObjectSerializer(), obj, desc);
 }

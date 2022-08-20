@@ -62,7 +62,7 @@ namespace Gcp.PubSub.Proxy
             }
             return pubsubMessages.Length;
         }
-		public PagedAsyncEnumerable<ListTopicsResponse, Topic> ListTopicsAsync(ProjectName projectName) => _serviceApiClient.ListTopicsAsync(projectName);
+        public PagedAsyncEnumerable<ListTopicsResponse, Topic> ListTopicsAsync(ProjectName projectName) => _serviceApiClient.ListTopicsAsync(projectName);
 
         public Task<Topic> GetTopicAsync(TopicName topic) => _serviceApiClient.GetTopicAsync(topic);
 

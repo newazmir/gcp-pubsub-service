@@ -39,5 +39,5 @@ namespace Gcp.PubSub.Interfaces.Attributes
         }
 
         public PubSubMessageType MessageType { get; }
-	}
+    }
 }

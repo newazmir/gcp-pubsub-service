@@ -19,7 +19,7 @@ namespace Gcp.PubSub.Interfaces.Attributes
             }
 
             Type = type;
-            Version=version;
+            Version = version;
         }
 
         public override string ToString() => $"{Type}-{Version}";

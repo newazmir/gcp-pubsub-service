@@ -21,14 +21,14 @@ namespace Gcp.PubSub
     public class PublisherClient : IPublisherClient
     {
         public bool CanCreateTopic { get; }
-        public string ProjectId { get; }
+        public string? ProjectId { get; }
 
-        private readonly ILogger _logger;
-        private readonly IJsonSerializer _jsonSerializer;
-        private readonly ProjectName _projectName;
-        private readonly IPublisherServiceApiClientProxy _publisherProxy;
-        private readonly LogScopeFactory _logScopeFactory;
-        private readonly AsyncRetryPolicy _retryPolicy;
+        private readonly ILogger? _logger;
+        private readonly IJsonSerializer? _jsonSerializer;
+        private readonly ProjectName? _projectName;
+        private readonly IPublisherServiceApiClientProxy? _publisherProxy;
+        private readonly LogScopeFactory? _logScopeFactory;
+        private readonly AsyncRetryPolicy? _retryPolicy;
 
         public Task Publish(string topicId, IPubSubMessageBase response, PubSubMessageType messageType) => _retryPolicy.ExecuteAsync(async () =>
         {
@@ -118,7 +118,7 @@ namespace Gcp.PubSub
 
         public async Task<IEnumerable<Topic>> GetTopics()
         {
-            IEnumerable<Topic> topics = null;
+            IEnumerable<Topic>? topics = null;
 
             try
             {
@@ -148,7 +148,7 @@ namespace Gcp.PubSub
             using (_logScopeFactory.CreateScope(_logger, null, $"create new topic {ProjectId}/{topicId}"))
             {
                 var topicName = TopicName.FromProjectTopic(ProjectId, topicId);
-                Topic topic = null;
+                Topic? topic = null;
 
                 try
                 {
@@ -188,7 +188,7 @@ namespace Gcp.PubSub
         public async Task<Topic> GetTopic(string topicId)
         {
             var topicName = TopicName.FromProjectTopic(_projectName.ProjectId, topicId);
-            Topic topic = null;
+            Topic? topic = null;
 
             try
             {

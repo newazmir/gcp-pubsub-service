@@ -13,7 +13,7 @@ namespace Gcp.PubSub.Proxy
     {
         bool IsEmulated { get; }
         Task<PublishResponse> PublishAsync(TopicName topic, IEnumerable<PubsubMessage> messages);
-        Task<int> PublishBatchAsync(TopicName topic, IEnumerable<PubsubMessage> messages); 
+        Task<int> PublishBatchAsync(TopicName topic, IEnumerable<PubsubMessage> messages);
         PagedAsyncEnumerable<ListTopicsResponse, Topic> ListTopicsAsync(ProjectName projectName);
         Task<Topic> GetTopicAsync(TopicName topic);
         Task<Topic> CreateTopicAsync(TopicName topic);

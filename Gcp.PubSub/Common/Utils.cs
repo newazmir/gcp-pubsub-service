@@ -53,5 +53,5 @@ namespace Gcp.PubSub.Common
         public static string Dump(this object obj, string comment = "", bool truncate = true) => new ObjectSerializer().ToJson(obj, comment, truncate);
 
         private static readonly Regex Pattern = new(@"[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+", RegexOptions.Compiled);
-	}
+    }
 }
