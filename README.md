@@ -1,1 +1,1 @@
-The purpose of this package is to simplify the interaction with Gcp PubSub and reduce the amount of boilerplate code.
+The purpose of this package is to simplify the interaction with Gcp PubSub and reduce the amount of boilerplate code
